@@ -1,0 +1,299 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+.header-section {
+    margin: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.offcanvas {
+    max-width: 80%;
+    height: 100vh; 
+    overflow-y: auto; 
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(210, 13, 13, 0.2);
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    margin-top: 0 !important; 
+}
+
+.offcanvas-body {
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+
+.nav-item {
+    color: #fff;
+    margin-bottom: 5px;
+    padding-top: 0px;
+}
+
+
+
+
+@media (min-width: 767px) {
+    .nav-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 6px 15px rgba(343, 260, 237, 0.3);
+        color: #fff;
+        cursor: pointer;
+        border-radius: 7px;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+    }
+    .nav-item {
+        color: black;
+        margin-bottom: 10px;
+        padding-top: 0px;
+        text-align: right;
+        margin-bottom: 50px;
+    }
+
+    .nav-item:hover {
+        color: #ee0979;
+        cursor: pointer;
+    }
+}
+
+.view-products {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff0844, #ffb199);
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.view-products:hover {
+    background: linear-gradient(45deg, #ffb199, #ff0844);
+    color: #fff;
+}
+
+.products-heading {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-container {
+    position: relative;
+    max-width: 80 rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.card {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+    text-align: left;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+.card:hover h5 {
+    color: #ff0844;
+    transition: color 0.3s ease-in-out;
+}
+
+.card:hover p {
+    color: #ff0844;
+    transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .card-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .image-container img {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        right: 0;
+        bottom: 20px;
+    }
+}
+
+.our-values-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.our-value-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.our-value-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+.our-value-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.our-value-container:hover img {
+    transform: scale(1.05);
+}
+
+.our-values-card {
+    padding: 20px;
+    background-color: #e1caca;
+    text-align: left;
+}
+
+.our-values-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff0844;
+    margin-bottom: 10px;
+}
+
+.our-values-des {
+    font-size: 14px;
+    font-weight: 400;
+    color: #f7f5f6;
+}
+
+@media (max-width: 767px) {
+    .our-values-heading {
+        font-size: 28px;
+    }
+    .our-values-card {
+        padding: 15px;
+    }
+    .our-values-name {
+        font-size: 18px;
+    }
+    .our-values-des {
+        font-size: 13px;
+    }
+}
+
+.footer-section {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    text-align: center;
+    margin: 0 !important;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+}
+
+.footer:hover {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
+}
+
+.footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.icon:hover {
+    color: #ee0979;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 5px;
+}
+
+.number-hover:hover {
+    color: #ee0979;
+}
+
+.copyright {
+    margin-bottom: 0 !important;
+    padding-bottom: 2px;
+}
+
+.footer-card {
+    background-color: #ffffff;
+    color: #ff6a00;
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
