@@ -294,6 +294,38 @@ html, body {
     background-color: #ffffff;
     color: #ff6a00;
     border-radius: 5px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+@media (max-width: 576px) {  /* Small devices */
+    .footer-card {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {  /* Tablets */
+    .footer-card {
+        padding: 5px;
+        max-width: 1200px;
+
+    }
+}
+
+@media (min-width: 993px) {  /* Large Screens */
+    .footer-card {
+        padding: 15px;
+        margin: 0;
+        max-width: 1200px;
+
+    }
+}
+
+@media (min-width: 1200px) {  /* Large Screens */
+    .footer-card {
+        padding: 15px;
+        margin: 0;
+        max-width: 100vw;
+
+    }
 }
